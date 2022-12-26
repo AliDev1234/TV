@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="nav1.css">
+<style>
+* {
+  box-sizing: border-box;
+margin-left: 3px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  height: 25vh;
+
+
+}
+
+.flex-item-left {
+  padding: 10px;
+  background-color: #ffe6ff;
+  flex: 50%;
+  margin: 2px;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  font-size: 35px;
+  font-weight: 550;
+  box-shadow: 3px 3px 30px rgb(122, 127, 129);
+  border-radius: 15px;
+}
+
+
+
+
+.flex-item-left a{
+  text-decoration: none;
+  color: black;
+}
+
+.flex-item-center a{
+  text-decoration: none;
+  color: black;
+}
+.flex-item-right a{
+  text-decoration: none;
+  color: black;
+}
+
+.flex-item-right {
+  background-color: #ffe6ff;
+  padding: 10px;
+  flex: 50%;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  font-size: 35px;
+  font-weight: 550;
+  margin: 2px;
+  box-shadow: 3px 3px 30px rgb(122, 127, 129);
+  border-radius: 15px;
+
+}
+.flex-item-center {
+  background-color: #ffe6ff;
+  padding: 10px;
+  flex: 50%;
+margin: 2px;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  font-size: 35px;
+  font-weight: 550;
+  box-shadow: 3px 3px 30px rgb(122, 127, 129);
+  border-radius: 15px;
+
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 844px) {
+  .flex-container {
+    flex-direction: column;
+    height: 50vh;
+ margin: 2 auto;
+ margin-left: 60px;
+ margin-right:60px;
+  }
+  div img{
+    text-align: center;
+    width: 500px;
+  }
+  .flex-item-left{
+    margin-bottom: 20px;
+
+
+  }
+  .flex-item-right{
+    margin-bottom: 20px;
+  }
+}
+i{
+padding-left: 40px;
+}
+
+
+
+/**/
+
+
+
+
+.site-footer
+    {
+      background-color:#ffb1ff;
+      padding:45px 0 20px;
+      font-size:15px;
+      line-height:24px;
+      color:#3366cc73;
+    }
+    .site-footer hr
+    {
+      border-top-color:rgb(0, 0, 0);
+      opacity:0.5
+    }
+    .site-footer hr.small
+    {
+      margin:20px 0
+    }
+    .site-footer h6
+    {
+        padding-left: 10px;
+      color:rgb(0, 0, 0);
+      font-size:16px;
+      text-transform:uppercase;
+      margin-top:5px;
+      letter-spacing:2px
+    }
+    .site-footer a
+    {
+      color:#000000;
+    }
+    .site-footer a:hover
+    {
+      color:#000000;
+      text-decoration:none;
+    }
+    .footer-links
+    {
+      padding-left:10px;
+      list-style:none
+    }
+    .footer-links li
+    {
+      display:block
+    }
+    .footer-links a
+    {
+      color:#000000
+    }
+    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+    {
+      color:#000000;
+      text-decoration:none;
+    }
+    .footer-links.inline li
+    {
+      display:inline-block
+    }
+    .site-footer .social-icons
+    {
+      text-align:right
+    }
+    .site-footer .social-icons a
+    {
+      width:40px;
+      height:40px;
+      line-height:40px;
+      margin-left:6px;
+      margin-right:0;
+      border-radius:100%;
+      background-color:#cce4ff;
+    }
+    .copyright-text
+    {
+      margin:0
+    }
+    @media (max-width:991px)
+    {
+      .site-footer [class^=col-]
+      {
+        margin-bottom:0;
+      }
+    }
+    @media (max-width:767px)
+    {
+      .site-footer
+      {
+        padding-bottom:0
+      }
+      .site-footer .copyright-text,.site-footer .social-icons
+      {
+        text-align:center;
+        padding-left: 10px;
+      }
+    }
+    .social-icons
+    {
+      padding-left:0;
+      margin-bottom:0;
+      list-style:none
+    }
+    .social-icons li
+    {
+      display:inline-block;
+      margin-bottom:4px
+    }
+    .social-icons li.title
+    {
+      margin-right:15px;
+      text-transform:uppercase;
+      color:#000000;
+      font-weight:700;
+      font-size:13px
+    }
+    .social-icons a{
+      background-color:#000000;
+      color:#000000;
+      font-size:16px;
+      display:inline-block;
+      line-height:44px;
+      width:44px;
+      height:44px;
+      text-align:center;
+      margin-right:8px;
+      border-radius:100%;
+      -webkit-transition:all .2s linear;
+      -o-transition:all .2s linear;
+      transition:all .2s linear
+    }
+    
+    @media (max-width:767px)
+    {
+      .social-icons li.title
+      {
+        display:block;
+        margin-right:0;
+        font-weight:600
+      }
+    }  
+</style>
+</head>
+<body>
+
+  <nav class="navbar">
+
+    <!-- LOGO -->
+    
+    <div class="logo"> <h1 id="h1"><span>t</span>e<span>c</span>h<span>n</span>i<span>c</span>a<span>l</span> C<span>o</span>l<span>l</span>e<span>g</span>e</h1></div>
+    
+    <!-- NAVIGATION MENU -->
+    
+    <ul class="nav-links">
+    
+    <!-- USING CHECKBOX HACK -->
+    
+    <input type="checkbox" id="checkbox_toggle" />
+    
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+    <!-- NAVIGATION MENUS -->
+    
+    <div class="menu">
+        
+      <li><a href="./css/first1.html">Home</a></li>
+      <li><a href="index2.html">جميع التخصصات</a></li>
+      <li><a href="/">الاسألة العامة</a></li>
+      
+      <li class="services">
+      
+      <a href="/">أختبار التخصصات</a>
+      
+ 
+      
+      
+      
+      </li>
+      
+      <li><a href="/">المكتبة الرقمية</a></li>
+      
+      <li><a href="/">OurTeam</a></li>
+      
+      </div>
+    
+    </ul>
+    
+    </nav>
+<div style="text-align: center;">
+<img src="ww.png" alt="" > 
+</div>
+<div class="flex-container">
+  
+  <div class="flex-item-left"> <a href="page_program.html">قسم تقنية الحاسب</a></div>
+  <div class="flex-item-right"> <a href="page_business.html">قسم تقنية الاعمال</a></div>
+   <div class="flex-item-center"> <a href="page_mechanical.html">قسم التقنية  الميكانيكية</a></div>
+</div>
+
+
+
+
+
+
+
+<footer class="site-footer" style="margin-top: 39px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify" style="color: white;" >Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+          <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+          <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+          <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+          <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+          <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text" style="color: white;">Copyright &copy; Made with love by students of the Technical College in Abha, all rights reserved             
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+</body>
+</html>

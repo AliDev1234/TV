@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programing</title>
+    <style>
+* {
+
+margin: 0;
+
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+}
+
+body {
+
+font-family: cursive;
+
+}
+
+a {
+
+text-decoration: none;
+
+}
+
+.nm {
+
+list-style: none;
+
+}
+.navbar {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+padding: 20px;
+
+background-color: #cbdea0;
+
+color: rgb(255, 255, 255);
+
+}
+
+.nav-links a {
+
+color: rgb(255, 255, 255);
+
+}
+
+/* LOGO */
+
+.logo {
+
+font-size: 16px;
+
+}
+
+/* NAVBAR MENU */
+
+.menu {
+
+display: flex;
+
+gap: 1em;
+
+font-size: 18px;
+
+}
+
+.menu li:hover {
+
+background-color:  #eaf2d9;
+
+border-radius: 5px;
+
+transition: 0.3s ease;
+
+}
+
+.menu li {
+
+padding: 5px 14px;
+
+}
+
+/* DROPDOWN MENU */
+
+.services {
+
+position: relative;
+
+}
+
+.dropdown {
+
+background-color: #cbdea0;
+
+padding: 1em 0;
+
+position: absolute; /*WITH RESPECT TO PARENT*/
+
+display: none;
+
+border-radius: 8px;
+
+top: 35px;
+
+}
+
+.dropdown li + li {
+
+margin-top: 10px;
+
+}
+
+.dropdown li {
+
+padding: 0.5em 1em;
+
+width: 8em;
+
+text-align: center;
+
+}
+
+.dropdown li:hover {
+
+background-color:  #eaf2d9;
+
+}
+
+.services:hover .dropdown {
+
+display: block;
+
+}
+input[type=checkbox]{
+
+display: none;
+
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+
+display: none;
+
+font-size: 24px;
+
+user-select: none;
+
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 844px) {
+
+.menu {
+
+display:none;
+
+position: absolute;
+
+background-color:#cbdea0;
+
+right: 0;
+
+left: 0;
+
+text-align: center;
+
+padding: 16px 0;
+
+}
+
+.menu li:hover {
+
+display: inline-block;
+
+background-color: #eaf2d9;
+
+transition: 0.3s ease;
+
+}
+
+.menu li + li {
+
+margin-top: 12px;
+
+}
+
+input[type=checkbox]:checked ~ .menu{
+
+display: block;
+
+}
+
+.hamburger {
+
+display: block;
+
+}
+
+.dropdown {
+
+left: 50%;
+
+top: 30px;
+
+transform: translateX(35%);
+
+}
+
+.dropdown li:hover {
+
+background-color:  #eaf2d9;
+
+}
+
+}
+        @media only screen and (min-width: 300px) and (max-width:900px) {
+           
+            
+           
+           
+            body {
+                background-color: #e9f0f0;
+            }
+
+            
+            h3,
+            h2 {
+                text-align: center;
+                border-right: 6px solid #cbdea0;
+                background-color: #cbdea0;
+            }
+
+
+            p {
+                text-align: right;
+                font-size: 18px;
+            }
+
+            table {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+            }
+
+            table tr td {
+                text-align: center;
+                font-size: 15px;
+            }
+
+            caption {
+                font-size: 20px;
+            }
+
+
+            h4 {
+                text-align: center;
+                font-size: 18px;
+                border-right: 5px solid#cbdea0;
+                background-color: #cbdea0;
+                width: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+            table th{
+              background-color: #cbdea0;
+            }
+/* .center{
+    text-align: center;
+} */
+
+            .p-right {
+                text-align: right;
+                font-size: 13px;
+                
+                background-color: #cbdea0;
+                text-align: right;
+            }
+img{
+  width: 300px;
+}
+
+            ol {
+                background: #cbdea0;
+                padding: 20px;
+                
+            }
+
+
+
+            ol li {
+                background: #eaf2d9;
+                color: rgb(0, 0, 0);
+                padding: 5px;
+                margin-left: 35px;
+                list-style:lower-alpha;
+            }
+
+.dawn1{
+
+margin-top: 20px;
+}
+.dawn2{
+    margin-top:320px;
+}
+.dawn3{
+    margin-top: 570px;
+}
+.dawn4{
+    margin-top: 820px;
+}
+.dawn5{
+    margin-top:1100px;
+
+}
+.dawn6{
+    margin-top:1300px;
+
+}
+.dawn7{
+   
+margin-top: 20px;
+}
+.dawn8{
+    margin-top: 250px;
+ 
+}
+
+.dawn9{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.dawn10{
+    margin-bottom: 20px;
+}
+        }
+        /*here add image background*/
+        .add{
+            background-image: url(p.png);
+            background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+            opacity: 0.2;
+        }
+
+        @media screen and (min-width: 901px) {
+h1,h2,h3,h4{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+}
+ table{
+
+margin-bottom: 18px;
+        
+
+
+} 
+  
+
+
+
+.dawn1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dawn1 td, dawn1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dawn1 tr:nth-child(even){background-color: #f2f2f2;}
+
+.dawn1 tr:hover {background-color: #ddd;}
+
+.dawn1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  background-color:#cbdea0;
+  color: white;
+}
+
+.dawn2 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dawn2 td, dawn2 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dawn2 tr:nth-child(even){background-color: #f2f2f2;}
+
+.dawn2 tr:hover {background-color: #ddd;}
+
+.dawn2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  background-color: #cbdea0;
+  color: white;
+}
+
+/**/
+.dawn3 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dawn3 td, dawn3 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dawn3 tr:nth-child(even){background-color: #f2f2f2;}
+
+.dawn3 tr:hover {background-color: #ddd;}
+
+.dawn3 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  background-color: #cbdea0;
+  color: white;
+}
+/**/
+.dawn4 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dawn4 td, dawn4 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dawn4 tr:nth-child(even){background-color: #f2f2f2;}
+
+.dawn4 tr:hover {background-color: #ddd;}
+
+.dawn4 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  background-color: #cbdea0;
+  color: white;
+}
+/**/
+.dawn5 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dawn5 td, dawn5 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dawn5 tr:nth-child(even){background-color: #f2f2f2;}
+
+.dawn5 tr:hover {background-color: #ddd;}
+
+.dawn5 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  background-color:  #cbdea0;
+  color: white;
+}
+/**/
+.dawn7 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dawn7 td, dawn7 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dawn7 tr:nth-child(even){background-color: #f2f2f2;}
+
+.dawn7 tr:hover {background-color: #ddd;}
+
+.dawn7 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  background-color:  #cbdea0;
+  color: white;
+}
+tr  {
+ text-align: right;
+}
+.head1{
+    margin-top: 16px;
+}
+h2,.d1{background-color:#cbdea0; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+
+}
+caption{
+    font-size: 20px;
+    font-weight: 700;
+}
+#table2{
+margin-top: 15px;
+    display: flex;
+    justify-content: center;
+font-size: 20px;
+
+        }
+        ol {
+                background: #eaf2d9;
+                padding: 50px;
+                padding-left: 150px;
+            }
+
+
+
+            ol li {
+                background: #eaf2d9;
+                color: rgb(0, 0, 0);
+                padding: 5px;
+                margin-left: 35px;
+                list-style:lower-alpha;
+                text-align: center;
+                padding-right: 650px;
+            }
+
+
+
+        }
+            /**/
+            .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+    padding-left: 10px;
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:10px;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:0;
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center;
+    padding-left: 10px;
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}   
+
+    </style>
+   
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+            <h1 id="h1"><span>t</span>e<span>c</span>h<span>n</span>i<span>c</span>a<span>l</span>
+                C<span>o</span>l<span>l</span>e<span>g</span>e</h1>
+        </div>
+
+        <!-- NAVIGATION MENU -->
+
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+
+            <input type="checkbox" id="checkbox_toggle" />
+
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+
+            <div class="menu">
+        
+              <li><a href="./css/first1.html">Home</a></li>
+              <li><a href="index2.html">جميع التخصصات</a></li>
+              <li><a href="/">الاسألة العامة</a></li>
+              
+              <li class="services">
+              
+              <a href="/">أختبار التخصصات</a>
+              
+         
+              
+              
+              
+              </li>
+              
+              <li><a href="/">المكتبة الرقمية</a></li>
+              
+              <li><a href="/">OurTeam</a></li>
+              
+              </div>
+
+        </ul>
+
+    </nav>
+    <div style="text-align: center;">
+      <img src="example.png" alt="" style="margin-top: 10px;"> 
+      </div>
+
+<div class="add">
+
+</div>
+
+
+    <h2 class="head1">تقنية البرمجة وتطوير الويب</h2>
+    <h3 >نبذة عن التخصص</h3>
+
+
+    <p class="center">أنَّه التخصص الذي يُعنى بكتابة التعليمات، والأوامر التي يُطلَب من جهاز الحاسوب تنفيذها وتكون هذه التعليمات
+        والأوامر مكتوبة على شكل "Code" "كودات" باستخدام لغات البرمجة أي لغات الحاسوب، حيث يستخدم جهاز الحاسوب لغات
+        البرمجة والتي يقوم من خلالها ...
+        أنَّه التخصص الذي يُعنى بكتابة التعليمات، والأوامر التي يُطلَب من جهاز الحاسوب تنفيذها وتكون هذه التعليمات
+        والأوامر مكتوبة على شكل "Code" "كودات" باستخدام لغات البرمجة أي لغات الحاسوب، حيث يستخدم جهاز الحاسوب لغات
+        البرمجة والتي يقوم من خلالها ...</p>
+
+
+    <table  class="dawn1">
+        <caption>خطة تخصص البرمجة</caption>
+        <br>
+        <tr>
+
+            <td colspan="4" style="text-align: center;">المستوى الاول</td>
+
+        </tr>
+        <tr>
+            <th>عدد الساعات</th>
+            <th>اسم المادة</th>
+            <th>رمز المقرر</th>
+            <th>م</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>الدراسات الاسلامية</td>
+            <td>101اسلم</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>(1)لغة انجليزي </td>
+            <td>101انجل</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>الرياضيات</td>
+            <td>101رياض</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>الفيزياء</td>
+            <td>101فيز</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>التوجيه المهني والتميز</td>
+            <td>101مهن</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>تجميع الحاسب وتشغيله</td>
+            <td>9124حال</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>الخوارزميات والمنطق</td>
+            <td>148حاب</td>
+            <td>7</td>
+        </tr>
+    </table>
+
+  <table class="dawn2">
+        <tr>
+
+            <td colspan="4" style="text-align: center;">المستوى الثاني</td>
+
+        </tr>
+        <tr>
+            <th>عدد الساعات</th>
+            <th>اسم المادة</th>
+            <th>رمز المقرر</th>
+            <th>م</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td> الكتابة الفنية</td>
+            <td>101عرب</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>(2)لغة انجليزي </td>
+            <td>102انجل</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>مقدمة تطبيقات الحاسب</td>
+            <td>101حال</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>اساسيات برمجة الحاسب</td>
+            <td>150حاب</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td>مبادئ برمجة صفحات الانترنت</td>
+            <td>9153حاب</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>مبادئ قواعد البيانات</td>
+            <td>182حاب</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+
+  <table  class="dawn3">
+        <tr>
+            <td colspan="4" style="text-align: center;">المستوى الثالث</td>
+
+        </tr>
+        <tr>
+            <th>عدد الساعات</th>
+            <th>اسم المادة</th>
+            <th>رمز المقرر</th>
+            <th>م</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>(3)لغة انجليزي </td>
+            <td>103انجل</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>تطبيقات الحاسب المتقدمة</td>
+            <td>102حاسب</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>برمجة الحاسب</td>
+            <td>212برمج</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>برمجة الانترنت</td>
+            <td>232برمج</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td>برمجة قواعد البيانات</td>
+            <td>222برمج</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>هندسة البرمجيات</td>
+            <td>241برمج</td>
+            <td>6</td>
+        </tr>
+    </table> 
+
+
+
+
+<table class="dawn4">
+        <tr>
+            <td colspan="4" style="text-align: center;">المستوى الرابع</td>
+
+        </tr>
+        <tr>
+            <th>عدد الساعات</th>
+            <th>اسم المادة</th>
+            <th>رمز المقرر</th>
+            <th>م</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>مهارات التعلم</td>
+            <td>101ماهر</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>(4)لغة انجليزي </td>
+            <td>103انجل</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>السلوك الوظيفي ومهارات الاتصال</td>
+            <td>101اسلك</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>تقنيات الانترنت المتقدمة</td>
+            <td>234برمج</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>برمجة الأجهزة الذكية</td>
+            <td>251برمج</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>التأهيل للشهادة الاحترافية</td>
+            <td>280حاسب</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>المشروع</td>
+            <td>295برمج</td>
+            <td>7</td>
+        </tr>
+    </table> 
+
+
+ <table  class="dawn5">
+        <tr>
+            <td colspan="4" style="text-align: center;">المستوى الخامس</td>
+
+        </tr>
+        <tr>
+            <th>عدد الساعات</th>
+            <th>اسم المادة</th>
+            <th>رمز المقرر</th>
+            <th>م</th>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>التدريب التعاوني</td>
+            <td>299برمج</td>
+            <td>1</td>
+        </tr>
+    </table> 
+
+ 
+
+
+<div class="dawn6">
+     <h4 class="d1">تخصص تقنية البرمجة </h4>
+     <br><br>
+    <p class="center">سوف تتعلم في تخصص تقنية البرمجة وتطوير الويب 
+   Front-End and Back-End
+    الواجهات الامامية والواجهات الخلفية 
+   وسوف ارفق لكم بعض المصادر التعليمية عن لغات البرمجة لتأخذو نظره عامة</P> 
+</div>
+ 
+
+     <table  class="dawn7" id="table2">
+        <tr>
+            <td>الرابط</td>
+            <td>اسم القناة</td>
+            <td>اسم اللغة</td>
+        </tr>
+        <tr>
+            <td><a href=""> اضغط هنا </a></td>
+            <td>الزيرو اكاديمي</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td><a href=""> اضغط هنا</a></td>
+            <td>الزيرو اكاديمي</td>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td><a href=""> اضغط هنا </a></td>
+            <td>الزيرو اكاديمي</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td><a href=""> اضغط هنا </a></td>
+            <td>الزيرو اكاديمي</td>
+            <td>PHP</td>
+        </tr>
+
+        <tr>
+            <td><a href=""> اضغط هنا
+                </a></td>
+            <td>الزيرو اكاديمي</td>
+            <td>SQL</td>
+        </tr>
+        <tr>
+            <td><a href="https://youtu.be/M3Na5luSx50">اضغط هنا</a></td>
+            <td>محمد الدسوقي</td>
+            <td>Java</td>
+        </tr>
+    </table> 
+<ol class="dawn8"  style="text-align: left; font-size: 20px; background-color: #eaf2d9;" >
+    <h2>من اهم المهارات التخصصية </h2><br>
+    <li class="p-right">يحدد المنطق المبني عليه علم برمجة الحاسوب </li>
+    <li class="p-right"> يكتب التعليمات البرمجية الأساسية</li>
+    <li class="p-right" >يطور النظم التطبيقية </li>
+    <li class="p-right"> يصمم قواعد البيانات</li>
+    <li class="p-right">يطور تطبيقات قواعد البيانات </li>
+    <li class="p-right" >يصمم صفحات الانترنت </li>
+    <li class="p-right">يطور مواقع الانترنت </li>
+    <li class="p-right" >يطور تطبيقات الانترنت المتقدمة </li>
+    <li class="p-right" >يطور تطبيقات الاجهزة الذكية </li>
+    <li class="p-right">يحلل ويصمم النظم </li> 
+</ol>
+
+ <div class="dawn9">
+ <h3 class="d1" style="margin-right: 4px;">ماهي اهمية الشهاداة الاحترافية؟<br>
+تساعد الشهادات المهنية الشخص على الاطلاع المستمر على ما هو جديد في مجال عمله وجلب هذه المعارف لتطوير أدائه تساعد
+        الشهادات المهنية على الحصول على دخل مادي أفضل، فعادة يرتفع راتب الشخص بنسبة جيدة مستقبلا في حالة حصوله على شهادة
+        مهنية معتمدة ومحترمة في سوق العمل مثل
+        </h3>
+</div>
+
+
+ <ol class="dawn10">
+        <li>Java SE 7
+            Programmer I</li>
+        <li>MCSA
+            (Microsoft
+            Certified
+            Solutions
+            Associate):
+            Web
+            Application</li>
+        <li>MCSA(Microsoft
+            Certified
+            Solutions
+            Associate):
+            SQL Server ,</li>
+        <li>
+            Certified
+            Solutions
+            Associate):
+            SQL Server ,
+            MCSA(Microsoft
+            Certified
+            Solutions
+            Associate):: SQL
+            2016 Database
+            Development</li>
+        <li>Oracle
+            Database SQL</li>
+        <li>
+            Oracle
+            Database 11g:
+            Program with
+            PL/SQL
+        </li>
+        <li>Zend PHP
+            Certified</li>
+        <li>Android ATC</li>
+        <li>(CCBA)The
+            Certification of
+            Capability in
+            Business
+            Analysis</li>
+        <li class="nm">(OCUP)OMG
+            Certified UML
+            Professiona</li>
+    </ol> 
+   
+  <h2>مجالات العمل المناسبة</h2>
+    <p class="center" style="margin-top: 10px; margin-bottom: 10px;">
+        من المتوقع أن يعمل في مجالات : المرتبطة 
+         <span style="color: #295656; font-size: 21px; font-weight: bold;">  ببرمجة وتطوير برمجيات الحاسب </span>  
+      <span  style="color: #295656; font-size: 21px; font-weight: bold;" >  كمساعد مبرمج </span>
+      <span style="color: #295656; font-size: 21px ;font-weight: bold;">   ومطور لتقنيات الانترنت.</span>
+        وغيرها من الأعمال المرتبطة بأعمال البرمجة المختلفة</p>
+
+
+
+
+
+         <!-- Site footer -->
+    <footer class="site-footer" style="margin-top: 39px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              </ul>
+            </div>
+  
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; Made with love by students of the Technical College in Abha, all rights reserved
+         
+              </p>
+            </div>
+
+          </div>
+        </div>
+  </footer>
+</body>
+</html>
